@@ -21,8 +21,15 @@
     </div>
   <div class="show-right">
     <div class="image-show-frame">
-      <%= image_tag data.pages[page].first[1].image,  class: "image-show" %>
+      <div class="gallery">
+        <%data.pages.loud.first[1].carousel.each do |screenshot|%>
+          <%= image_tag screenshot %>
+        <% end %>
+      </div>
+    <div class="slick">
+      <%= image_tag data.pages.loud.first[1].carousel[0],  class: "image-show" %>
     </div>
-    <p class="legend"> image 1/5</p>
-  </div>
+    </div>
+      <p class="legend"> image <span class="numerito">1</span>/5</p>
+    </div>
 </div>
