@@ -1,0 +1,28 @@
+<div id="show">
+  <div class="card large">
+    <div class="show-left">
+      <h1><%= data.pages[page].first[1].title%></h1>
+      <p class= "bigger"><%= data.pages[page].first[1].date%></p>
+      <p><span class="red">by</span> <%= data.pages[page].first[1].autor%></p>
+      <div class="fonts">
+        <h3>FONTS</h3>
+         <%data.pages[page].first[1].fonts.each do |font|%>
+          <li class= "fonts-list"><%= font %></li>
+        <% end %>
+      </div>
+      <div class="btn-margin">
+      <%= link_to "Visit site","#{data.pages[page].first[1].url}" , class: " btn-red" %>
+      </div>
+      <div class="list-inline show-tags">
+        <%data.pages[page].first[1].tags.each do |tag|%>
+          <li><%= tag %></li>
+        <% end %>
+      </div>
+    </div>
+  <div class="show-right">
+    <div class="image-show-frame">
+      <%= image_tag data.pages[page].first[1].image,  class: "image-show" %>
+    </div>
+    <p class="legend"> image 1/5</p>
+  </div>
+</div>

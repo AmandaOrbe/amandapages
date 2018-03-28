@@ -1,0 +1,149 @@
+.cards{
+  max-width: 1000px;
+}
+
+.card{
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 1px 1px 2px 0 rgba(153,153,153,0.51);
+}
+
+.square{
+  height: 305px;
+  width: 305px;
+  margin-bottom: 45px;
+}
+
+.card-title{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  h3{
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+
+.image-card-frame{
+  overflow:hidden;
+  height: 176px;
+  width: 305px;
+  margin: 0 auto;
+ }
+
+
+.image-card{
+  width: 305px;
+  height: auto;
+}
+
+.red{
+  font-weight: 500;
+  color: #E95262;
+}
+
+
+
+.card-footer{
+  text-align: left;
+  padding: 12px;
+  p{
+    font-size: 12px;
+    margin: 5px
+  }
+}
+.card-tags{
+  display: flex;
+
+  // justify-content: space-between;
+}
+
+// .cards{
+
+// }
+
+// .curso-title{
+//   height: 20%;
+//   width: 80%;
+//   margin: 0 auto;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+//   h3{
+//     text-align:center;
+//   }
+//   h3:hover{
+//     color: red;
+//   }
+// }
+
+// .curso-text{
+//     left: 0;
+//     top: 120px;
+//     height: 30%;
+//   width: 80%;
+//   margin: 0 auto;
+//   overflow: hidden;
+// }
+
+
+// .card-space{
+//   height: 460px;
+//   border: 1px solid #EFF8F8;
+// }
+// .curso-card{
+//   height: 420px;
+//   width: 270px;
+//   padding: 15px;
+//   background-color: white;
+//   margin: 10px;
+//   text-align: center;
+// }
+
+
+
+// .curso-card:hover{
+//   width: 272px;
+//   height: 422px;
+// }
+
+// .imagen-card-frame{
+//   overflow:hidden;
+//   height: 165px;
+//   width: 230px;
+//   margin: 5px auto;
+//   border-radius: 4px;
+// }
+// .imagen-card{
+//   width: 230px;
+//   height: auto;
+
+// }
+
+// .especialistas{
+//   width:100%;
+//   h3{
+//     color: $green !important;
+//     font-family: "Montserrat";
+//     font-weight: 300;
+//     font-size: 22px;
+//   };
+//     .titulos-lista{ font-family: "Montserrat";
+//       color: black;
+//       font-weight: 300;
+//       font-size: 15px;
+//       letter-spacing: -1px;
+//     };
+//   .titulos-lista:hover{
+//       text-decoration:none;
+//       font-weight: 300;
+//       letter-spacing: -1px;
+//     };
+// }
+
+
+// .descriptivos{
+//   display:none;
+// }
