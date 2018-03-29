@@ -1,5 +1,6 @@
 .cards{
   max-width: 1000px;
+  z-index:0;
 }
 
 .card{
@@ -41,7 +42,7 @@
 
 .red{
   font-weight: 500;
-  color: #E95262;
+  color: $red;
 }
 
 

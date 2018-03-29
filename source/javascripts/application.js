@@ -59,10 +59,26 @@ $(function() {
 
 // show lightbox
 
-  $('.image-card').on('click', function(){
-      $('.lightbox').css("display", "block");
-
-
+$('.puntodeapoyo').click(function(e){
+    e.preventDefault();
+    $('body').css("overflow", "hidden");
+    $(".lightbox").fadeIn(1000);
+    $("#code").load($(this).children("a").prop("href"));
+    console.log($(this).children("a").prop("href"));
   });
+
+
+// hide lightbox
+
+
+  $('.btn-cancel, .lightbox').on('click', function(e){
+      $(".lightbox").fadeOut(1000);
+      $('body').css("overflow", "initial");
+      });
+  $( '.no-fade' ).click(function( event ) {
+        console.log("namaste")
+      event.stopPropagation();
+  });
+
 
 });

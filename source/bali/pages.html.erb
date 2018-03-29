@@ -1,15 +1,20 @@
 ---
 title: Le Wagon - Middleman
 ---
+<div class="lightbox">
+  <div id="code">
+        </div>
+</div>
 
      <div class="cards">
       <div class="row">
         <%data.pages.each do |page|%>
-        <div class="light-box">
-                  <%= partial "about" %>
-                </div>
+
           <div class="col-xs-12 col-sm-6  col-md-4">
-            <div class="card square">
+            <div class="card square puntodeapoyo">
+
+
+
               <div class="card-title">
                 <h3><%= page[1].first[1].title%></h3>
               </div>
@@ -37,5 +42,3 @@ title: Le Wagon - Middleman
         <% end %>
       </div>
     </div>
-
-
