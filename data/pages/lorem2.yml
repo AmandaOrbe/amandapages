@@ -1,6 +1,6 @@
 LOUD:
-  title: "LOUD srl"
-  image: loud1.png
+  title: "Ship It"
+  image: lorem2.png
   carousel: ["loud1.png", "loud2.png", "loud3.png", "loud4.png", "loud5.png"]
   autor: "LOUD srl"
   tags: ["agency", "animations", "javascript", "minimal"]

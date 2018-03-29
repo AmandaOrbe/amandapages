@@ -1,35 +1,38 @@
-<div id="show">
-  <div class="card large">
-    <div class="show-left">
-      <h1><%= data.pages[page].first[1].title%></h1>
-      <p class= "bigger"><%= data.pages[page].first[1].date%></p>
-      <p><span class="red">by</span> <%= data.pages[page].first[1].autor%></p>
-      <div class="fonts">
-        <h3>FONTS</h3>
-         <%data.pages[page].first[1].fonts.each do |font|%>
-          <li class= "fonts-list"><%= font %></li>
-        <% end %>
+
+
+  <div id="show">
+    <div class="card large">
+      <div class="show-left">
+        <h1><%= data.pages[page].first[1].title%></h1>
+        <p class= "bigger"><%= data.pages[page].first[1].date%></p>
+        <p><span class="red">by</span> <%= data.pages[page].first[1].autor%></p>
+        <div class="fonts">
+          <h3>FONTS</h3>
+           <%data.pages[page].first[1].fonts.each do |font|%>
+            <li class= "fonts-list"><%= font %></li>
+          <% end %>
+        </div>
+        <div class="btn-margin">
+        <%= link_to "Visit site","#{data.pages[page].first[1].url}" , class: " btn-red" %>
+        </div>
+        <div class="list-inline show-tags">
+          <%data.pages[page].first[1].tags.each do |tag|%>
+            <li><%= tag %></li>
+          <% end %>
+        </div>
       </div>
-      <div class="btn-margin">
-      <%= link_to "Visit site","#{data.pages[page].first[1].url}" , class: " btn-red" %>
+    <div class="show-right">
+      <div class="image-show-frame">
+        <div class="gallery">
+          <%data.pages.loud.first[1].carousel.each do |screenshot|%>
+            <%= image_tag screenshot %>
+          <% end %>
+        </div>
+      <div class="slick">
+        <%= image_tag data.pages.loud.first[1].carousel[0],  class: "image-show" %>
       </div>
-      <div class="list-inline show-tags">
-        <%data.pages[page].first[1].tags.each do |tag|%>
-          <li><%= tag %></li>
-        <% end %>
       </div>
-    </div>
-  <div class="show-right">
-    <div class="image-show-frame">
-      <div class="gallery">
-        <%data.pages.loud.first[1].carousel.each do |screenshot|%>
-          <%= image_tag screenshot %>
-        <% end %>
+        <p class="legend"> image <span class="numerito">1</span>/5</p>
       </div>
-    <div class="slick">
-      <%= image_tag data.pages.loud.first[1].carousel[0],  class: "image-show" %>
-    </div>
-    </div>
-      <p class="legend"> image <span class="numerito">1</span>/5</p>
-    </div>
-</div>
+  </div>
+

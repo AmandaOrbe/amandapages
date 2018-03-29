@@ -20,7 +20,14 @@
 //         $(this).attr("src", images[i]);
 //         $(this).fadeIn();
 //       });
+
+
+
 $(function() {
+
+
+  // show gallery
+
   var galleryImage = $(".slick").find("img").first();
   var images = $(".gallery").find("img");
   console.log($(".numerito"));
@@ -41,5 +48,21 @@ $(function() {
       });
       console.log(i);
     });
+
+// navbar growing
+
+  $('.navbar a').on('click', function(){
+      $('.navbar a.active').removeClass('active', 800);
+      $(this).addClass('active', 800);
+
+  });
+
+// show lightbox
+
+  $('.image-card').on('click', function(){
+      $('.lightbox').css("display", "block");
+
+
+  });
 
 });

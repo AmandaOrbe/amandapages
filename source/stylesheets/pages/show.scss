@@ -1,3 +1,14 @@
+.light-box{
+  display: none;
+  width:100vw;
+  height:100vh;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
 .gallery{
   display:none;
 }
@@ -31,7 +42,7 @@
   h3{
     font-size: 16px;
     font-weight: 500;
-    font-family: "roboto";
+    font-family: 'Josefin Sans';
   }
 
 }

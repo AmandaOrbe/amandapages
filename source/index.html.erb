@@ -1,39 +1,14 @@
----
-title: Le Wagon - Middleman
----
+<div class="navbar">
+  <%= link_to "articles","#articles" , class: "tab navbar-link", data: { toggle: 'tab'} %>
+  <%= link_to "pages","#pages" , class: "tab navbar-link active", data: { toggle: 'tab'}   %>
+  <%= link_to "ressources","#ressources" , class: "tab navbar-link", data: { toggle: 'tab'}  %>
+</div>
 
-<div id="home">
-  <div class="home-content">
-    <br>
-   <h1>My selected pages</h1>
-   <br>
-     <div class="cards">
-      <div class="row">
-        <%data.pages.each do |page|%>
-          <div class="col-xs-12 col-sm-6  col-md-4">
-            <div class="card square">
-              <div class="card-title">
-                <h3><%= page[1].first[1].title%></h3>
-              </div>
-              <% link_to "/#{page[0]}.html" do %>
-                <div class="image-card-frame">
-                    <%= image_tag page[1].first[1].image,  class: "image-card" %>
-                </div>
-                <% end %>
-                <div class="card-footer">
 
-                <p><span class="red">by</span> <%= page[1].first[1].autor%></p>
-                <div class="card-tags">
-                <%page[1].first[1].tags.each do |tag|%>
-                 <li class="list-inline"><%= tag %></li>
-                 <% end %>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </div>
+<div id="content">
+<div class="tab-content">
+  <div id="articles" class="tab-pane fade "><%= partial "bali/articles" %></div>
+  <div id="pages" class="tab-pane faden active"><%= partial "bali/pages" %></div>
+  <div id="ressources" class="tab-pane fade"><%= partial "bali/ressources" %></div>
+</div>
 </div>
