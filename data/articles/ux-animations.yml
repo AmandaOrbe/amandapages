@@ -1,9 +1,8 @@
 UX ANIMATIONS:
   title: "Good to great UI animation tips"
-  image: /articles/ux-animations/ux-animations1.png
-  carousel: ["/articles/ux-animations/ux-animations1.png", "/articles/ux-animations/ux-animations2.png", "/articles/ux-animations/ux-animations3.png"]
+  carousel: ["articles/ux-animations/ux-animations1.png", "articles/ux-animations/ux-animations2.png", "articles/ux-animations/ux-animations3.png"]
   autor: "Pablo Stanley"
   tags: ["animation ", "UX", "Design", "UI"]
-  date: "March 6th 2018"
-  headlines: ["averta - Regular", "Helvetica neue - bold ", "Majesti -book", "Times -thin"]
-  url: "https://uxdesign.cc/good-to-great-ui-animation-tips-7850805c12e5?ref=uxdesignweekly"
+  date: "Mar 6"
+  headlines: "Practical suggestions to improve your UI micro-interactions."
+  url: https://uxdesign.cc/good-to-great-ui-animation-tips-7850805c12e5?ref=uxdesignweekly

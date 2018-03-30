@@ -1,1 +1,44 @@
-<h1>Cool articles!</h1>
+  <%= link_to "Visit site","google.com" , class: " btn-red", :relative => false %>
+
+     <div class="cards">
+      <div class="row">
+        <%data.articles.each do |article|%>
+
+          <div class="col-xs-12 col-sm-6  col-md-4">
+            <div class="card article-card">
+
+
+
+                <% link_to "article[1].first[1].url" do %>
+                <div class="image-card-frame" >
+                    <%= image_tag article[1].first[1].carousel.first,  class: "image-card" %>
+                </div>
+
+                <% end %>
+
+                  <h3><%= article[1].first[1].title%></h3>
+                  <h5><%= article[1].first[1].headlines%></h5>
+                  <h5><%= article[1].first[1].url%></h5>
+
+
+
+
+
+                <p><span class="red">by</span> <%= article[1].first[1].autor%></p>
+                <p class="gray narrow"><%= article[1].first[1].date%></p>
+                <div class="card-tags">
+                  <ul class="list-inline">
+                <%article[1].first[1].tags.each do |tag|%>
+                 <li class="tag"><%= tag %></li>
+                 <li>  </li>
+                 <% end %>
+                 </ul>
+
+
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+

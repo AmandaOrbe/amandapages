@@ -20,11 +20,35 @@ $headers-font: 'Playfair Display', "serif";
     font-size: 18px;
   }
 
-p{
-  font-size: 12px;
-}
+body{
+  p{
+    font-size: 12px;
+  }
 
-li{
-  font-size: 12px;
-  list-style: none;
+  li{
+    font-size: 12px;
+    list-style: none;
+  }
+
+  h5{
+    font-size: 14px;
+    color: #757575;
+    font-family: 'Playfair Display', "serif";
+  }
+
+  h3{
+    font-size: 16px;
+    font-family: 'Playfair Display', "serif";
+  }
+
+  h1{
+    font-size: 48px;
+    font-family: 'Playfair Display', "serif";
+  }
+  h4{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Josefin Sans';
+  }
+
 }
