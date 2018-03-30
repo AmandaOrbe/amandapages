@@ -40,15 +40,28 @@ body{
     font-size: 16px;
     font-family: 'Playfair Display', "serif";
   }
+  h3:visited{
+    color:black !important;
+  }
+  a{
+    color:black !important;
+  }
+  a:visited{
+    color: black !important;
+  }
 
   h1{
     font-size: 48px;
     font-family: 'Playfair Display', "serif";
   }
+
   h4{
     font-size: 16px;
     font-weight: 500;
     font-family: 'Josefin Sans';
   }
 
+}
+body:visited{
+  color: black !important;
 }

@@ -2,7 +2,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-my_pages = ["loud", "lorem", "lorem2", "lorem3"]
+my_pages = ["loud"]
 my_pages.each do |page|
   proxy "/#{page}.html", "/show.html", :locals => { :page => page },  ignore: true
 end
