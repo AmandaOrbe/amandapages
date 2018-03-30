@@ -19,7 +19,10 @@
               <% link_to "/#{page[0]}.html" do %>
                 <div class="image-card-frame"  id:"<% page %>">
                     <%= image_tag page[1].first[1].carousel.first,  class: "image-card" %>
+                    <div class="overlay">
+                    </div>
                 </div>
+
 
                 <% end %>
                 <div class="card-footer">
