@@ -52,9 +52,16 @@ $(function() {
 // navbar growing
 
   $('.navbar a').on('click', function(){
+      $(".underline").css("width", "0");
       $('.navbar a.active').removeClass('active', 800);
       $(this).addClass('active', 800);
+      $(this).parent().find(".underline").css("width", "100%");
 
+  });
+  $(document).ready(function(){
+    $(".active").parent().find(".underline").css("width", "100%");
+    console.log("ready");
+    console.log($(".active").parent());
   });
 
 // show lightbox
