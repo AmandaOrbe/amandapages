@@ -1,0 +1,9 @@
+Furniture shop:
+  title: "Furniture shop"
+  carousel: ["images/pages/furniture/furniture1.png", "images/pages/furniture/furniture2.png", "images/pages/furniture/furniture3.png"]
+  autor: "L.lei for NBSP "
+  tags: ["e-commerce", "cards", "transitions", animations ]
+  date: "April 2nd 2018"
+  opinion: "I really like the transition between the cards and the presentation of the products."
+  fonts: ["averta - Regular", "Helvetica neue - bold ", "Majesti -book", "Times -thin"]
+  url: "https://dribbble.com/shots/4419346-funiture-shopping-gif"
